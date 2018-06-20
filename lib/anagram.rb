@@ -13,9 +13,9 @@ class Anagram
     if string1.sort == string2.sort && string1.length == string2.length
       return word
     else
-      return []
     end
   end
+  return []
 end
 
 

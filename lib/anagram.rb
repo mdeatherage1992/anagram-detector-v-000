@@ -6,7 +6,13 @@ class Anagram
   end
 
   def match(new_string)
-    new_string.zip(string).map {|word,string| anagram?(word,string) ? 1 : 0}
+    if string.length != new_string.length
+      return []
+  end
+  new_string.each do |word|
+    if word.split('').match(string.split(''))
+      return word
+    end
   end
 
 

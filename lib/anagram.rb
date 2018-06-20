@@ -16,7 +16,7 @@ class Anagram
     else
     end
   end
-  return []
+  return array
 end
 
 

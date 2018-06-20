@@ -10,7 +10,7 @@ class Anagram
   new_string.each do |word|
     string1 = word.split('')
     string2 = string.split('')
-    if string1.include? string2 && string1.length == string2.length
+    if string1.sort == string2.sort && string1.length == string2.length
       return word
     end
   end

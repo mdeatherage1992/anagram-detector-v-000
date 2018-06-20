@@ -9,10 +9,9 @@ class Anagram
     new_string.each do |word|
       if word.include? string
         return word
-      else
-        return []
       end
     end
+    return []
   end
 
 end

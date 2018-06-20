@@ -11,11 +11,9 @@ class Anagram
     string1 = word.split('')
     string2 = string.split('')
       binding.pry
-      return word
     end
   end
-  return []
-end
+  
 
 
 end

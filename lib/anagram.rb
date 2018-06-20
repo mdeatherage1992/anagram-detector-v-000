@@ -6,8 +6,7 @@ class Anagram
   end
 
   def match(new_string)
-    anagram_string = new_string.split(' ')
-    anagram_string.each do |word|
+    new_string.each do |word|
       if word.match(string)
         return word
       else

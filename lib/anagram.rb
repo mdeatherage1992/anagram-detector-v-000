@@ -11,6 +11,7 @@ class Anagram
   end
   new_string.each do |word|
     if word.split('').match(string.split(''))
+      binding.pry
       return word
     end
   end

@@ -13,8 +13,6 @@ class Anagram
     if string1 == string2
       binding.pry
       return word
-    else
-      return []
     end
   end
 end

@@ -8,3 +8,6 @@ class Anagram
   def match(new_string)
     new_string.zip(string).map {|word,string| anagram?(word,string) ? 1 : 0}
   end
+
+
+end

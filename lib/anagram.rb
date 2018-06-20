@@ -11,6 +11,7 @@ class Anagram
     string1 = word.split('')
     string2 = string.split('')
     if string1 == string2
+      binding.pry
       return word
     else
       return []

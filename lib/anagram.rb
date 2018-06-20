@@ -12,8 +12,11 @@ class Anagram
     string2 = string.split('')
     if string1.length == string2.length && string1.include? string2
       return word
+    else
+      return []
     end
   end
+end
 
 
 

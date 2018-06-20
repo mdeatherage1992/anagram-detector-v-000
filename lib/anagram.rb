@@ -7,7 +7,7 @@ class Anagram
 
   def match(new_string)
     new_string.each do |word|
-      if word.match(string)
+      if word.include? string
         return word
       else
         return []

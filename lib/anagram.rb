@@ -8,7 +8,8 @@ class Anagram
 
   def match(new_string)
   new_string.each do |word|
-    if word.split('').match(string)
+    string1 = word.split('')
+    string2 = string.split('')
       binding.pry
       return word
     end

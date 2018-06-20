@@ -6,12 +6,5 @@ class Anagram
   end
 
   def match(new_string)
-    new_string.each do |word|
-      if word.include? string
-        return word
-      end
-    end
-    return []
+    new_string.zip(string).map {|word,string| anagram?(word,string) ? 1 : 0}
   end
-
-end

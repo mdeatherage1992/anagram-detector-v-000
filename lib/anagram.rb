@@ -10,9 +10,13 @@ class Anagram
   new_string.each do |word|
     string1 = word.split('')
     string2 = string.split('')
-      binding.pry
+    if string1.length == string2.length && string1.match(string2)
+      return word
+    else
+      return []
     end
   end
+end
 
 
 
